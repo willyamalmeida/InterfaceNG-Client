@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app-client-side - Departamento</title>
+    <link rel="stylesheet" href="../../libs/styles/site.css" >
+    <link rel="stylesheet" href="../../libs/styles/painel.css" >
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" name="homepage">Minha Companhia</a>
+        </header>
+        <section class="painel paginas-departamento-index">
+            <nav>
+                <a href="editar.html?id=0">Novo</a>
+            </nav>
+
+            <div class="title-main">Departamentos</div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="text" name="filter">
+                    &nbsp;
+                    <button name="search">Pesquisar</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <table name="grid">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total:&nbsp;<span>0</span></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </section>
+        <footer>
+            2021 &copy; Minha Companhia
+        </footer>
+    </div>
+
+    <script src="../../libs/scripts/app.paginas.departamento.index.js"></script>
+    <script src="../../libs/scripts/store.js"></script>
+    <script>
+        new app.paginas.departamento.index(document.querySelector(".paginas-departamento-index"));
+    </script>
+</body>
+</html>

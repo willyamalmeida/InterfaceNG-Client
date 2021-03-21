@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>app-client-side - Departamento - edição</title>
+    <link rel="stylesheet" href="../../libs/styles/site.css" >
+    <link rel="stylesheet" href="../../libs/styles/painel.css" >
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../../index.html" name="homepage">Minha Companhia</a>
+        </header>
+        <section class="painel paginas-departamento-editar">
+            <nav>
+                <a name="save">Salvar</a>
+                <a name="delete">Excluir</a>
+                <a name="cancel">Cancelar e Voltar</a>
+            </nav>
+
+            <div class="title-main">Departamento</div>
+
+            <div class="row">
+                <div class="col40 text-right">
+                    <label>Id</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="id">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col40 text-right">
+                    <label>Descrição</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="description" class="width300">
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            2021 &copy; Minha Companhia
+        </footer>
+    </div>
+
+    <script src="../../libs/scripts/app.paginas.departamento.editar.js"></script>
+    <script src="../../libs/scripts/store.js"></script>
+    <script>
+        new app.paginas.departamento.editar(document.querySelector(".paginas-departamento-editar"));
+    </script>
+</body>
+</html>
